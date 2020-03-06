@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style type="text/css">
+            table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            width: 100px;
+            height: 100px;
+          }
+
+          .myclass{
+            display:block;
+            width: 100%;
+            height: 100%;
+          }
+        </style>
+        <body>
+            <table>
+                <tr>
+                    <td colspan="3"><input type='number' placeholder="0" id="t1" value='0' class='myclass'></td>
+                    <td><button onclick="document.getElementById('t1').value=0" class='myclass'>CC</button></td>
+                    
+                </tr>
+
+                <tr>
+                    <td><button id='seven' onclick="document.getElementById('t1').value+=7" class='myclass'>7</button></td>
+                    <td><button id='eight' onclick="document.getElementById('t1').value+=8" class='myclass'>8</button></td>
+                    <td><button id='nine' onclick="document.getElementById('t1').value+=9" class='myclass'>9</button></td>
+                    <td><button id='sub' class='myclass'>-</button></td>
+                    
+                </tr>
+
+                <tr>
+                    <td><button id='four' onclick="document.getElementById('t1').value+=4" class='myclass'>4</button></td>
+                    <td><button id='five' onclick="document.getElementById('t1').value+=5" class='myclass'>5</button></td>
+                    <td><button id='six' onclick="document.getElementById('t1').value+=6" class='myclass'>6</button></td>
+                    <td><button id='add' class='myclass'>+</button></td>
+                    
+                </tr> 
+
+                <tr>
+                    <td><button id='one' onclick="document.getElementById('t1').value+=1" class='myclass'>1</button></td>
+                    <td><button id='two' onclick="document.getElementById('t1').value+=2" class='myclass'>2</button></td>
+                    <td><button id='three' onclick="document.getElementById('t1').value+=3" class='myclass'>3</button></td>
+                    <td><button id='mul' class='myclass'>*</button></td>
+                    
+                </tr>
+                
+                <tr>
+                <td colspan="2"><button id='zero' onclick="document.getElementById('t1').value+=0"  class='myclass'>0</button></td>
+                <td><button id='enter'  class='myclass'>=</button></td>
+                <td><button id='div' class='myclass'>/</button></td>
+                </tr>
+            
+            
+            
+            </table>
+            <script src="Calc.js"></script>
+        </body>
+    </head>
+</html>
